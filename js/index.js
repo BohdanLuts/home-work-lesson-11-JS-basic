@@ -48,3 +48,45 @@ console.log("5.6", num);
 
 --num; // num = num – 1;
 console.log("5.7", num);
+
+// prompt task 1
+let randomNumber = Number(
+  prompt("Задача №1. Квадрат числа:\n\nВведите Ваше число:")
+);
+let resultNumber = randomNumber ** 2;
+alert("Квадрат вашего числа " + randomNumber + " равен " + resultNumber + ".");
+
+// prompt task 2
+let randomNumberOne = Number(
+  prompt(
+    "Задача №2. Среднее арифметическое двух чисел:\n\nВведите Ваше первое число:"
+  )
+);
+let randomNumberTwo = Number(prompt("Введите Ваше второе число:"));
+let average = (randomNumberOne + randomNumberTwo) / 2;
+alert(
+  "Среднее арифметическое числа " +
+    randomNumberOne +
+    " и " +
+    randomNumberTwo +
+    " составляет " +
+    average +
+    "."
+);
+
+// prompt task 3
+let min = Math.abs(
+  Number(
+    prompt(
+      "Задача №3. Количество секунд в минутах\n\nВведите количество минут:"
+    )
+  )
+);
+let sec = min * 60;
+alert(min + " минут = " + sec + " секунд.");
+
+// prompt task 4
+let greeting = "Hello";
+let userName = null;
+userName = prompt("What is your name?");
+alert(greeting + ", " + userName + "!");
